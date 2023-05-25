@@ -11,11 +11,11 @@ body{
 	background-size: 100%;/*è®¾ç½®èƒŒæ™¯å›¾ç‰‡å¤§å°*/
 	background-repeat: no-repeat; /*ä¸è®©èƒŒæ™¯å›¾ç‰‡å¹³é“º*/
 	background-position:center;
-	cursor:url(../img/none), auto;
+	cursor:url(../img/miku1.png), auto;
 	/* background-size:cover; */
 }
 a {
-    cursor:url(../img/none), auto;
+    cursor:url(../img/miku2.png), auto;
 	text-decoration: none;
 }
 .position{
