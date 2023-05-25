@@ -1,105 +1,100 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="shortcut" href="img\favicon.ico" type="image/x-icon">
-		<link rel="icon" sizes="any" mask href="img\favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<title>红魔馆的主人</title>
-	</head>
-	<body>
-		<canvas id="canvas"></canvas>
-		<div class="position">
-			<!-- <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tt&skin=pitaya" frameborder="0" width="590" height="98" allowtransparency="true"></iframe> -->
-			<div id="banner">
-				<div class="outer">
-					<!-- <div class="image">
-						<img src="img/miku02.png" />
-					</div> -->
-					<div class="text">
-						红魔馆的主人
-					</div>
-				</div>
-			</div>
-			<div id="navigation">
-				<form action="https://www.baidu.com/baidu"  target="_blank">
-					<div class="outer">
-						<div class="search-bar">
-							<input type="text" autocomplete="off" name="word" id="bar" placeholder="(●'◡'●)ﾉ♥關鍵字の輸入" />
-							<div class="search-button">
-								<input type="image" name="imgbtn" src="img/fulan.gif" border="0" />
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-			<div id="botton">
-				<a href="https://bilibili.com/" target="_blank">
-					<img class="logo" src="img/bilibililog.png" title="死宅快乐网" />
-				</a>
-				<a href="https://www.icourse163.org/" target="_blank">
-					<img class="logo" src="img/th.jpg" title="MOOC" />
-				</a>
-				<a href="https://www.apeaksoft.com/zh-CN/image-upscaler/" target="_blank">
-					<img class="logo" src="img/tuxiangzengqiang.png" title="图像增强" />
-				</a>
-				<a href="https://www.youtube.com/" target="_blank">
-					<img class="logo" src="img/youtube.jpg" title="youtube" />
-				</a>
-				<a href="https://chat.openai.com/chat" target="_blank">
-					<img class="logo" src="img/chatgpt.jpg" title="chatgpt" />
-				</a>
-				<a href="https://thwiki.cc/" target="_blank">
-					<img class="logo" src="img/THBwiki.png" title="THBwiki" />
-				</a>
-				<a href="https://www.mgtv.com/" target="_blank">
-					<img class="logo" src="img/mangguo.jpg" title="芒果TV" />
-				</a>
-				<a href="https://v.qq.com/" target="_blank">
-					<img class="logo" src="img/txsp.png" title="腾讯视频"/>
-				</a>
-				<a href="https://www.btnull.org/" target="_blank">
-					<img class="logo" src="img/pianku_logo.svg" title="片库"/>
-				</a>
-				<a href="http://www.taobao.com" target="_blank">
-					<img class="logo" src="img/taobao.png" title="淘宝"/>
-				</a>
-				<a href="https://weibo.com/u/6054516109/home" target="_blank">
-					<img class="logo" src="img/weibo.png" title="吃瓜网">
-				</a>
-				<a href="https://pixivic.com/" target="_blank">
-					<img class="logo" src="img/beer.svg" title="老婆搜索网" />
-				</a>
-				<a href="https://www.pixiv.net" target="_blank">
-					<img class="logo" src="img/88839_pixiv_96x96.png" title="P站" />
-				</a>
-				<a href="https://www.amap.com/" target="_blank">
-					<img  class="logo" src="img/gaode_map.png" title="高德地图网页版">
-				</a>				
-				<a href="https://yandex.com/images/" target="_blank">
-					<img class="logo" src="img/YandexBrowser.png" title="红裤衩" />
-				</a>
-				<a href="https://www.google.com/imghp?hl=zh-CN" target="_blank">
-					<img class="logo" src="img/Google_img.png" title="谷歌图片" />
-				</a>
-				<a href="http://www.gfxcamp.com/" target="_blank">
-					<img class="logo" src="img/gfxcamp.png" title="龋齿一号" />
-				</a>
-				<a href="http://www.mvcat.com" target="_blank">
-					<img class="logo" src="img/movie.png" title="电影推荐" />
-				</a>
-				<a href="https://trace.moe/" target="_blank">
-					<img class="logo" src="img/favicon128.png" />
-				</a>
-				<a href="https://saucenao.com/" target="_blank">
-					<img class="logo" src="img/saucenao.png" title="一个识图网站，可以识别画师" >
-				</a>
-				<a href="https://pan.baidu.com/" target="_blank">
-					<img class="logo" src="img/baiduyun.jpeg" title="百度网盘" />
-				</a>
-			</div>
-		</div>
-	</body>
-	<script type="text/javascript" src="./js/snow.js"></script>
-</html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+  <title>红魔馆的主人</title>
+  <style> #hero {
+    background-image: url('img/sakuya.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }</style>
+</head>
+<body>
+  <div id="header">
+    <h1>红魔馆的主人</h1>
+  </div>
+  
+  <div id="hero">
+    <img class="profile-image" src="img/touxiang.JPG" alt="个人照片">
+    <h2>欢迎来到我的主页</h2>
+    <p>在这里我将打造我自己的个人网站</p>
+    <ul class="social-icons">
+      <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  
+  <div id="content">
+    <h2>主页</h2>
+    
+    <div class="blog-post">
+      <h3><a href="https://space.bilibili.com/85646678?spm_id_from=333.1007.0.0" target="_blank">馆主的B站主页</a></h3>
+      <a href="https://space.bilibili.com/85646678?spm_id_from=333.1007.0.0" target="_blank">
+          <img src="img/bilibililog.png" alt="bilibili">
+      </a>
+    </div>
+    
+    <div class="blog-post">
+      <h3><a href="music.html">红魔馆音乐厅</a></h3>
+      <p></p>
+    </div>
+    
+    <div class="blog-post">
+      <h3>暂时没想好还能做什么</h3>
+      <p></p>
+    </div>
+  </div>
 
+
+
+
+  <div style="background-color: #f1f1f1;
+  text-align: center;
+  padding: 40px;
+  font-size:20px;
+  ">
+  <P style="color:red">馆主从博丽神社的巫女那偷来了赛钱箱</P>
+  <p>↓↓↓</p>
+  <div class="image-selection">
+<div class="image-container">
+    <img src="img/weixin.JPG" alt="weixin" height="200px">
+    <p>微信赛钱</p>
+</div>
+<div class="image-container">
+    <img src="img/zhifubao.PNG" alt="zhifubao" height="200px">
+    <p>支付宝赛钱</p>
+</div>
+<div class="clearfix">
+</div>
+</div>
+  </div>
+
+
+
+  <div id="footer" style="text-align: center;">
+    <p>版权所有 &copy; 2023 | <a href="https://space.bilibili.com/85646678?spm_id_from=333.1007.0.0" target="_blank">馆主的bilibili主页</a></p>
+  </div>
+  <script>
+    // JavaScript部分
+    document.addEventListener('DOMContentLoaded', function() {
+      const blogPosts = document.querySelectorAll('.blog-post');
+      
+      function animatePosts() {
+        blogPosts.forEach(function(post, index) {
+          setTimeout(function() {
+            post.classList.add('active');
+          }, index * 200);
+        });
+      }
+      
+      animatePosts();
+    });
+  </script>
+</body>
+</html>

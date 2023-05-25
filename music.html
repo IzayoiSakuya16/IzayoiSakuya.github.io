@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>红魔馆音乐厅</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .title {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      font-size: 24px;
+    }
+    
+    .music-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    .music-card {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+    
+    .music-card:hover {
+      transform: scale(1.05);
+    }
+    
+    .music-card img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    
+    .music-card h3 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    
+    .progress-bar {
+      width: 80%;
+      height: 10px;
+      background-color: #444;
+      margin: 20px auto;
+    }
+    
+    .progress-bar-fill {
+      height: 100%;
+      background-color: #ff6600;
+      width: 50%; /* 修改这里来调整进度条的宽度 */
+    }
+    
+    .author {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    
+    .footer {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .footer p {
+      margin: 0;
+    }
+    .music-card.playing .music-image {
+      animation: rotate 2s linear infinite; /* 添加旋转动画效果 */
+    }
+    
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .rotate-animation {
+      animation: rotate 2s linear infinite;
+    }
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var musicCards = document.querySelectorAll(".music-card");
+      var audioElements = document.querySelectorAll("audio");
+      var playingIndex = -1;
+      
+      function pauseAllExcept(index) {
+        audioElements.forEach(function(audio, i) {
+          if (i !== index) {
+            audio.pause();
+          }
+        });
+      }
+      
+      function togglePlayback(index) {
+        var audio = audioElements[index];
+        
+        if (index === playingIndex) {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        } else {
+          pauseAllExcept(index);
+          audio.play();
+          playingIndex = index;
+        }
+      }
+      
+      audioElements.forEach(function(audio, index) {
+        audio.addEventListener("play", function() {
+          togglePlayback(index);
+        });
+      });
+    });
+</script>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">红魔馆音乐厅</h1>
+        <p class="subtitle">享受音乐的魅力！</p>
+      </div>
+      
+      <div class="music-container">
+        <div class="music-card">
+          <img src="music/suiyue.jpg" alt="Music 1">
+          <h3>Foxtail-Grass Studio - 歳月-雲流れ</h3>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <p class="author">なつかぜメモリア</p>
+          <audio src="music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3" controls></audio> <!-- 使用相对路径引用 MP3 文件 -->
+        </div>
+        
+        <div class="music-card">
+          <img src="music/suiyue.jpg" alt="Music 2">
+          <h3>Foxtail-Grass Studio - 歳月-雲流れ</h3>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <p class="author">なつかぜメモリア</p>
+          <audio src="music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3" controls></audio> <!-- 使用相对路径引用 MP3 文件 -->
+        </div>
+        
+        <div class="music-card">
+          <img src="music/suiyue.jpg" alt="Music 3">
+          <h3>Foxtail-Grass Studio - 歳月-雲流れ</h3>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <p class="author">なつかぜメモリア</p>
+          <audio src="music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3" controls></audio> <!-- 使用相对路径引用 MP3 文件 -->
+        </div>
+      </div>
+      <div class="music-container">
+        <div class="music-card">
+          <img src="music/suiyue.jpg" alt="Music 1">
+          <h3>Foxtail-Grass Studio - 歳月-雲流れ</h3>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <p class="author">なつかぜメモリア</p>
+          <audio src="music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3" controls></audio> <!-- 使用相对路径引用 MP3 文件 -->
+        </div>
+        
+        <div class="music-card">
+          <img src="music/suiyue.jpg" alt="Music 2">
+          <h3>Foxtail-Grass Studio - 歳月-雲流れ</h3>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <p class="author">なつかぜメモリア</p>
+          <audio src="music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3" controls></audio> <!-- 使用相对路径引用 MP3 文件 -->
+        </div>
+        
+        <div class="music-card">
+          <img src="music/suiyue.jpg" alt="Music 3">
+          <h3>Foxtail-Grass Studio - 歳月-雲流れ</h3>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <p class="author">なつかぜメモリア</p>
+          <audio src="music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3" controls></audio> <!-- 使用相对路径引用 MP3 文件 -->
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy; 2023 红魔馆音乐厅. All rights reserved.</p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+      var musicCards = document.querySelectorAll(".music-card");
+      var audioElements = document.querySelectorAll("audio");
+      
+      function toggleRotation(index) {
+        musicCards.forEach(function(card, i) {
+          if (i === index) {
+            card.querySelector(".music-image").style.animation = "rotate 2s linear infinite";
+          } else {
+            card.querySelector(".music-image").style.animation = "none";
+          }
+        });
+      }
+      
+      audioElements.forEach(function(audio, index) {
+        audio.addEventListener("play", function() {
+          toggleRotation(index);
+        });
+        
+        audio.addEventListener("pause", function() {
+          toggleRotation(-1);
+        });
+      });
+    });
+  
+    </body>
+    </html>
