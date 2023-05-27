@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             url: "music/flowering night.mp3"
         },
         {
-            title: "Foxtail-Grass Studio - 歳月-雲流れ-",
+            title: "Foxtail-Grass Studio - 歳月-雲流れ- / 碎月",
             artist: "なつかぜメモリア",
             cover: "music/suiyue.jpg",
             url: "music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3"

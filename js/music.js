@@ -1,6 +1,6 @@
 const songs = [
   {
-    title: '碎月',
+    title: 'Foxtail-Grass Studio - 歳月-雲流れ- / 碎月',
     artist: 'なつかぜメモリア',
     cover: 'music/suiyue.jpg',
     src: 'music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3'
