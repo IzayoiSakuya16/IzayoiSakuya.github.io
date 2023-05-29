@@ -1,192 +1,196 @@
-  .image-selection {
-    display: flex;
-    justify-content: center;
+.image-selection {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.image-container img {
+  display: block;
+}
+
+.image-container p {
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+  * {
+    box-sizing: border-box;
   }
   
-  .image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  #hero {
+    background-image: url('img/sakuya.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  }
+  
+  #hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s;
+  }
+  
+  #hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    animation: rotate 8s infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
     margin-right: 10px;
   }
   
-  .image-container img {
-    display: block;
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
   
-  .image-container p {
-    font-style: italic;
-    margin: 0;
+  .social-icons a:hover {
+    color: #ff4081;
+  }
+  
+  #content {
+    background-color: transparent;
+    padding: 100px 0;
     text-align: center;
   }
-    * {
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-    }
-    
-    #header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    h1 {
-      margin: 0;
-      font-size: 40px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-    
-    #hero {
-      background-image: url('img/sakuya.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 100px 0;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    #hero:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    }
-    
+  
+  .blog-post {
+    width: 300px;
+    background-color: rgb(122, 119, 119);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .blog-post.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .blog-post h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
     #hero h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
-      animation: fadeInDown 1s;
+      font-size: 30px;
     }
     
     #hero p {
-      font-size: 20px;
-      margin-bottom: 40px;
-      animation: fadeIn 1s;
-    }
-    
-    @keyframes fadeInDown {
-      0% {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-    
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    
-    .profile-image {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      animation: rotate 8s infinite linear;
-    }
-    
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    
-    .social-icons {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .social-icons li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-    
-    .social-icons a {
-      color: #fff;
-      font-size: 24px;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    .social-icons a:hover {
-      color: #ff4081;
-    }
-    
-    #content {
-      background-color: transparent;
-      padding: 100px 0;
-      text-align: center;
+      font-size: 16px;
     }
     
     .blog-post {
-      width: 300px;
-      background-color: #fff;
-      padding: 20px;
-      margin: 20px;
-      display: inline-block;
-      vertical-align: top;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-      transform: translateY(50%);
-      transition: opacity 0.5s ease, transform 0.5s ease;
+      width: 100%;
     }
-    
-    .blog-post.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    .blog-post h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    
-    .blog-post p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    
-    @media screen and (max-width: 600px) {
-      #hero h2 {
-        font-size: 30px;
-      }
-      
-      #hero p {
-        font-size: 16px;
-      }
-      
-      .blog-post {
-        width: 100%;
-      }
-    }
+  }
+
+  @keyframes glowing {
+    0% { text-shadow: 0 0 10px #f00; }
+    50% { text-shadow: 0 0 20px #000; }
+    100% { text-shadow: 0 0 10px #f00; }
+}
 
 
-
-
-    
+  
