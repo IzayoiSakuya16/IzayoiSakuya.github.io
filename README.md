@@ -1,1 +1,1 @@
-自制个人主页
+自制个人网站，index是主页，manhua是看漫画的，music是听歌的，musicdownload是下载music中有的歌曲，网页能看的漫画都是压缩过的，清晰度不高，想要高清晰度的可以去touhou.buzz中加群或者在网站中进我的bilibili主页私信我。
