@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
             artist: "なつかぜメモリア",
             cover: "music/suiyue.jpg",
             url: "music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3"
+        },
+        {
+            title: "东方永夜抄 ～ Eastern Night",
+            artist: "ZUN",
+            cover: "music/東方永夜抄～ Imperishable Night.jpg",
+            url: "music/东方永夜抄 ～ Eastern Night.mp3"
         }
         // 添加更多的歌曲信息
     ];
