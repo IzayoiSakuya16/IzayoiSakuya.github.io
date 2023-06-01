@@ -6,6 +6,12 @@ const songs = [
     src: 'music/Foxtail-Grass Studio - 歳月-雲流れ-.mp3'
   },
   {
+    title: '东方永夜抄 ～ Eastern Night',
+    artist: 'ZUN',
+    cover: 'music/東方永夜抄～ Imperishable Night.jpg',
+    src: 'music/东方永夜抄 ～ Eastern Night.mp3'
+  },
+  {
     title: 'Flowering Night',
     artist: 'ZUN',
     cover: 'music/sakuya.jpg',
