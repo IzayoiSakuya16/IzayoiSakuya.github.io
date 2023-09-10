@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>红魔馆画廊</title>
+    <meta name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <style type="text/css">
+      /* 初始化 */
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .snow-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+      .snowflake {
+            position: absolute;
+            background: rgba(166,200,178,0.7);
+            
+            border-radius: 50%;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+      /* * {
+				border: #000 1px solid;
+			} */
+      .flex {
+        display: flex;
+        border-radius: 10px;
+        background-color: #7058a3;
+      }
+
+      .flex1 {
+        flex: 1;
+        background-color: #4d5aaf;
+      }
+
+      .baise {
+        background-color: #4a488e;
+      }
+
+      .yinying {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px,
+          rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+
+      .column {
+        flex-direction: column;
+        background-color: #bbbcde;
+      }
+
+      .mg8 {
+        margin: 8px;
+      }
+
+      .mgl8 {
+        margin-left: 8px;
+      }
+
+      .mgt8 {
+        margin-top: 8px;
+      }
+
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: #bb0c0c solid 1px;
+        font-size: 14px;
+        color: #f00000;
+        text-align: center;
+        background-color: #706cca;
+
+      }
+
+      .daohang:hover {
+        background-color: #4d4398;
+        font-size: 16px;
+        color: #b41818;
+      }
+
+      /* 图文并排 */
+      #tuwen {
+        align-items: center;
+        justify-content: center;
+      }
+
+      .tu {
+        text-align: center;
+      }
+
+      .text p {
+        font-size: 15px;
+      }
+
+      /* 表单 */
+      #bd {
+        background-image: url(img/keji.gif);
+        color: #ffffff;
+        background-position: right;
+      }
+
+      #biaodan p {
+        text-align: center;
+      }
+
+      #biaodan p input {
+        margin: 5px;
+      }
+
+      /* 尾部 */
+      #weibu {
+        background-image: url(img/wei.gif);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+      }
+      .glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0099ff, 0 0 40px #0099ff, 0 0 50px #0099ff, 0 0 60px #0099ff;
+  }
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ff99, 0 0 40px #00ff99, 0 0 50px #00ff99, 0 0 60px #00ff99;
+  }
+}
+
+      /* @media (max-width:900px) {
+				.Neiro {
+					background: radial-gradient(circle at top,#444,#000);
+				}
+				.Cebian {
+					display: none;
+				}
+			} */
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px;background-color: #507ea4;" class="Cebian baise yinying">
+
+      <!-- 头像栏 -->
+      <div class="flex" style="align-items: center;justify-content: center;border-bottom: 1px #666 solid;">
+        <img src="img/hualang.jpg" style="
+					width: 15%;
+          padding: 5%;
+					">
+        <div class="glow"><p style="color: #5654a2;">红魔馆画廊</p></div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="flex1">
+        <div class="daohang"><a style="text-decoration: none;color: #99ab4e;" href="photo.html">首页</a></div>
+        <div class="daohang"><a style="text-decoration: none;color: #c7dc68;" href="pages1.html">pages1</a></div>
+        <div class="daohang"><a style="text-decoration: none;color: #d8e698;" href="pages2.html">pages2</a></div>
+      </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 column">
+      <!-- 头部栏 -->
+      <div  class="baise yinying" id="toubu">
+        <img src="img/many.jpg" style="width: 100%;">
+      </div>
+      <!-- 内容区 -->
+      <div class="flex Neiro">
+        <!-- 左区 -->
+        <div style="flex:3">
+
+        <!-- 数据区 -->
+          <div style="background-color: #867ba9;" class="flex shuJuQu">
+            <!-- 数据块 -->
+            <div  style="background-color: #a0dbef;" class="flex1 mg8 baise yinying">
+              <img src="img/touxiang.JPG" style="width: 100%;">
+              <h5  style="color:#d645a6" class="glow"; align="center">红魔馆的主人</h5>
+            </div>
+            <!-- 数据块 -->
+            <div style="background-color: #89c3eb;"class="flex1 mg8 baise yinying">
+              <img src="img/touxiang.JPG" style="width: 100%;">
+              <h5 style="color:#0c0e92" class="glow" align="center">红魔馆的主人</h5>
+            </div>
+            <!-- 数据块 -->
+            <div  style="background-color: #84a2d4;"class="flex1 mg8 baise yinying">
+              <img src="img/touxiang.JPG" style="width: 100%;">
+              <h5 style="color:#2bc551" class="glow" align="center">红魔馆的主人</h5>
+            </div>
+            <!-- 数据块 -->
+            <div style="background-color: #83ccd2;" class="flex1 mg8 baise yinying">
+              <img src="img/touxiang.JPG" style="width: 100%;">
+              <h5 style="color:#c97a14" class="glow" align="center">红魔馆的主人</h5>
+            </div>
+          </div>
+
+        <!-- 列表区 -->
+          <div style="background-color: #92b5a9;" class="column">
+            <!-- 列表 -->
+            <div style="overflow: hidden; " class="flex baise mg8 yinying" id="tuwen">
+              <!-- 图片 -->
+              <div style="background-color: #a2d7dd;margin-right: 15px;"class="tu" >
+                <img src="img/sakuya.jpg" style="width:100%">
+                <h5 style="color:#14c975" class="glow" align="center">红魔馆的主人</h5>
+              </div>
+              <div class="tu" style="background-color: #abced8; margin-right: 15px;">
+                <img src="img/sakuya.jpg" style="width:100%">
+                <h5 style="color:#5314c9" class="glow" align="center">红魔馆的主人</h5>
+              </div>
+              <div class="tu" style="background-color: #a0d8ef; margin-right: 15px;">
+                <img src="img/sakuya.jpg" style="width:100%">
+                <h5 style="color:#c91484" class="glow" align="center">红魔馆的主人</h5>
+              </div>
+              
+            </div>
+           
+            
+            
+        <!-- 数据区 -->
+          <div style="background-color: #7ebea5;"  class="flex shuJuQu">
+            <!-- 数据块 -->
+            <div  style="background-color: #84a2d4;" class="flex1 mg8 baise yinying">
+              <img src="img/touxiang.JPG" style="width: 100%;">
+              <h5  style="color:#d645a6" class="glow"; align="center">红魔馆的主人</h5>
+            </div>
+            <!-- 数据块 -->
+            <div style="background-color: #83ccd2;" class="flex1 mg8 baise yinying">
+              <img src="img/touxiang.JPG" style="width: 100%;">
+              <h5 style="color:#0c0e92" class="glow" align="center">红魔馆的主人</h5>
+            </div>
+            <!-- 数据块 -->
+            <div  style="background-color: #84b9cb;" class="flex1 mg8 baise yinying">
+              <img src="img/touxiang.JPG" style="width: 100%;">
+              <h5 style="color:#2bc551" class="glow" align="center">红魔馆的主人</h5>
+            </div>
+          </div>
+            
+          <!-- 列表 -->
+          <div style="background-color: #84b9cb;"  style="overflow: hidden; " class="flex baise mg8 yinying" id="tuwen">
+            <!-- 图片 -->
+            <div class="tu" style="margin-right: 15px;background-color: #80aba9;">
+              <img src="img/sakuya.jpg" style="width:100%">
+              <h5 style="color:#14c975" class="glow" align="center">红魔馆的主人</h5>
+            </div>
+            <div class="tu" style="margin-right: 15px; background-color: #83ccd2;">
+              <img src="img/sakuya.jpg" style="width:100%">
+              <h5 style="color:#5314c9" class="glow" align="center">红魔馆的主人</h5>
+            </div>
+            <div class="tu" style="margin-right: 15px; background-color: #a2d7dd;">
+              <img src="img/sakuya.jpg" style="width:100%">
+              <h5 style="color:#c91484" class="glow" align="center">红魔馆的主人</h5>
+            </div>
+            
+          </div>
+            <!-- <div style="height: 200px;" class="baise mg8 yinying"></div> -->
+          </div>
+        </div>
+        
+        <!-- 右区 -->
+        <div style="flex:1" class="YouQu column flex baise mgl8 mgt8 yinying">
+          <!-- 图片循环区 -->
+          <div  id="xh">
+            <img src="img/touxiang.JPG" style="width: 100%;">
+            <h5 style="color:#c91484" class="glow" align="center">红魔馆的主人</h5>
+            <img src="img/touxiang.JPG" style="width: 100%;">
+            <h5 style="color:#c91484" class="glow" align="center">红魔馆的主人</h5>
+            <img src="img/touxiang.JPG" style="width: 100%;">
+            <h5 style="color:#c91484" class="glow" align="center">红魔馆的主人</h5>
+        </div>
+        </div>
+    </div>
+</div>
+
+  </body>
+  <script>
+    // 创建雪花
+    function createSnowflake() {
+        const snowflake = document.createElement("div");
+        snowflake.className = "snowflake";
+        size=Math.random() * 10 + 2
+        snowflake.style.width = `${size}px`;
+        snowflake.style.height = `${size}px`;
+        snowflake.style.left = `${Math.random() * 100}%`;
+        snowflake.style.top = "-10px";
+        document.body.appendChild(snowflake);
+
+        // 设置雪花下落动画
+        const animationDuration = Math.random() * 5 + 2; // 随机速度
+        snowflake.style.animationDuration = `${animationDuration}s`;
+
+        // 移除雪花
+        snowflake.addEventListener("animationiteration", () => {
+            document.body.removeChild(snowflake);
+            createSnowflake(); // 在雪花飘落完毕后创建新的雪花
+        });
+    }
+
+    // 创建多个雪花
+    function createSnowflakes() {
+        for (let i = 0; i < 100; i++) {
+            createSnowflake();
+        }
+    }
+
+    // 初始化雪花
+    createSnowflakes();
+</script>
+
+</html>
